@@ -1,7 +1,7 @@
 gorilla-sessions-memcache
 =========================
 
-Memcache session support for Gorilla Web Toolkit.  
+Memcache session with server authentication.
 
 Dependencies
 ------------
@@ -10,15 +10,15 @@ The usual gorilla stuff:
 
     go get github.com/gorilla/sessions
 
-Plus Brad Fitz' memcache client:
+Plus Memcachier's fork of Brad Fitz' memcache client:
 
-    go get github.com/bradfitz/gomemcache/memcache
+    go get github.com/memcachier/gomemcache/memcache
 
 Usage
 -----
 
     import (
-      "github.com/bradfitz/gomemcache/memcache"
+      "github.com/memcachier/gomemcache/memcache"
       gsm "github.com/bradleypeabody/gorilla-sessions-memcache"
     )
 
@@ -26,6 +26,7 @@ Usage
 
     // set up your memcache client
     memcacheClient := memcache.New("localhost:11211")
+    memcacheClient.SetAuth("username", "password")
     
     // set up your session store
     store := gsm.NewMemcacheStore(memcacheClient, "session_prefix_", []byte("secret-key-goes-here"))

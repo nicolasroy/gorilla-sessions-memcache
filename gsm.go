@@ -8,7 +8,7 @@ import (
 	"encoding/gob"
 	"encoding/json"
 	"fmt"
-	"github.com/bradfitz/gomemcache/memcache"
+	"github.com/memcachier/gomemcache/memcache"
 	"github.com/gorilla/securecookie"
 	"github.com/gorilla/sessions"
 	"log"

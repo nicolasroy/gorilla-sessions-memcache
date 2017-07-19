@@ -2,7 +2,7 @@ package gsm
 
 import (
 	"fmt"
-	"github.com/bradfitz/gomemcache/memcache"
+	"github.com/memcachier/gomemcache/memcache"
 	"io/ioutil"
 	"net/http"
 	"net/http/cookiejar"
