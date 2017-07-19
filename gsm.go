@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"github.com/memcachier/gomemcache/memcache"
 	"github.com/gorilla/securecookie"
-	"github.com/gorilla/sessions"
+	"github.com/skanukov/sessions" // fork of github.com/gorilla/sessions using context from std lib
 	"log"
 	"net/http"
 	"strings"

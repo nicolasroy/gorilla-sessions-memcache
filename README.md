@@ -6,9 +6,9 @@ Memcache session with server authentication.
 Dependencies
 ------------
 
-The usual gorilla stuff:
+The fork of gorilla session using context from std lib:
 
-    go get github.com/gorilla/sessions
+    go get github.com/skanukov/sessions
 
 Plus Memcachier's fork of Brad Fitz' memcache client:
 

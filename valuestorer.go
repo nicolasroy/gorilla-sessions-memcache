@@ -6,7 +6,7 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/gorilla/sessions"
+	"github.com/skanukov/sessions" // fork of github.com/gorilla/sessions using context from std lib
 )
 
 var (

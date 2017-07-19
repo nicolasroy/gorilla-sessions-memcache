@@ -3,7 +3,7 @@ package gsm
 import (
 	"encoding/base32"
 	"github.com/gorilla/securecookie"
-	"github.com/gorilla/sessions"
+	"github.com/skanukov/sessions" // fork of github.com/gorilla/sessions using context from std lib
 	"net/http"
 	"strings"
 )
